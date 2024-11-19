@@ -1,0 +1,162 @@
+/* Body Styling */
+body {
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #121212; /* Dark Background */
+  color: #ffffff; /* Light Text */
+}
+
+/* Game Container */
+.game-container {
+  text-align: center;
+  width: 100%;
+  max-width: 400px;
+  padding: 20px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.7);
+  border-radius: 10px;
+  background: #1e1e1e;
+}
+
+h1 {
+  margin-bottom: 20px;
+}
+
+/* Animasi Berulang pada Judul */
+.animated-title {
+  font-size: 2.5rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  background: linear-gradient(90deg, red, orange, yellow, green, cyan, blue, violet);
+  background-size: 400%;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: rgbAnimation 3s infinite linear, scalePulse 2s infinite ease-in-out;
+  text-align: center;
+}
+
+/* Efek Gradient Bergerak */
+@keyframes rgbAnimation {
+  0% {
+    background-position: 0%;
+  }
+  100% {
+    background-position: 400%;
+  }
+}
+
+/* Efek Skala Berdenyut */
+@keyframes scalePulse {
+  0%, 100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+}
+
+/* Menu Buttons */
+.menu button {
+  padding: 12px 20px;
+  margin: 10px;
+  font-size: 16px;
+  font-weight: bold;
+  color: #ffffff;
+  background: #333333;
+  border: 2px solid #555555;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.menu button:hover {
+  background-color: #555555;
+  color: #00ffcc;
+}
+
+/* Game Board */
+.board {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+  margin: 20px auto;
+  max-width: 400px;
+}
+
+.cell {
+  width: 100%;
+  aspect-ratio: 1;
+  background: #252525;
+  border: 2px solid #555555;
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #00ffcc;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.cell:hover {
+  background-color: #333333;
+}
+
+.cell.taken {
+  pointer-events: none;
+}
+
+/* Message Section */
+.message {
+  margin-top: 20px;
+}
+
+.message p {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+.message button {
+  padding: 10px 20px;
+  font-size: 16px;
+  font-weight: bold;
+  color: #ffffff;
+  background: #333333;
+  border: 2px solid #555555;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.message button:hover {
+  background-color: #555555;
+  color: #00ffcc;
+}
+
+/* Hidden Class */
+.hidden {
+  display: none;
+}
+
+/* Responsiveness */
+@media (max-width: 480px) {
+  .game-container {
+    width: 90%;
+  }
+
+  .menu button {
+    font-size: 14px;
+    padding: 10px 15px;
+  }
+
+  .cell {
+    font-size: 2rem;
+  }
+
+  .message p {
+    font-size: 1.2rem;
+  }
+}
