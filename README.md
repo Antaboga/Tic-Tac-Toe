@@ -7,7 +7,7 @@
 ![Repo Size](https://img.shields.io/github/repo-size/ANTABOGA-DEVELOPER/tic-tac-toe?style=flat-square)
 ![Issues](https://img.shields.io/github/issues/ANTABOGA-DEVELOPER/tic-tac-toe?style=flat-square)
 
-**Tic Tac Toe** adalah permainan klasik yang hadir dengan desain modern. Dengan tema gelap dan animasi RGB yang menarik, Anda bisa bermain dengan teman atau melawan AI yang pintar. Game ini sepenuhnya responsif dan dapat dimainkan di perangkat apapun!
+**Tic Tac Toe** ```adalah permainan klasik yang hadir dengan desain modern. Dengan tema gelap dan animasi RGB yang menarik, Anda bisa bermain dengan teman atau melawan AI yang pintar. Game ini sepenuhnya responsif dan dapat dimainkan di perangkat apapun!```
 
 ---
 
@@ -40,7 +40,7 @@ Cobalah untuk mencocokkan tiga tanda (**X** atau **O**) dalam satu garis lurus s
 ## **🛠️ Teknologi yang Digunakan**
 
 ```bash
-HTML5   # Struktur halaman dan elemen-elemen game.
+HTML   # Struktur halaman dan elemen-elemen game.
 CSS3    # Desain dan animasi, dengan tema gelap dan efek RGB.
 JavaScript # Logika permainan, interaksi pemain, dan AI.
 ```
